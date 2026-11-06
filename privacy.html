@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 (Privacy Policy) - YumYum Calendar</title>
+  <style>
+    :root {
+      --primary: #FF9F43;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text: #1E293B;
+      --text-secondary: #64748B;
+      --border: #E2E8F0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 36px 28px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+    .header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+    }
+    .header h1 {
+      font-size: 24px;
+      color: #0F172A;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header .meta {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-top: 8px;
+    }
+    .lang-switcher {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .lang-btn {
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--text-secondary);
+    }
+    .lang-btn.active {
+      background: var(--primary);
+      color: #FFFFFF;
+      border-color: var(--primary);
+    }
+    h2 {
+      font-size: 18px;
+      color: #0F172A;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      padding-left: 10px;
+      border-left: 4px solid var(--primary);
+    }
+    p, ul {
+      font-size: 14.5px;
+      margin-bottom: 14px;
+      color: #334155;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .highlight-box {
+      background: #FFF9F2;
+      border: 1px solid #FFE4C8;
+      border-radius: 10px;
+      padding: 16px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .highlight-box strong {
+      color: #C26100;
+    }
+    .nav-links {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      font-size: 13.5px;
+    }
+    .nav-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-content').forEach(el => el.style.display = 'none');
+      document.getElementById('content-' + lang).style.display = 'block';
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+      document.getElementById('btn-' + lang).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🍼 YumYum Calendar</h1>
+      <div class="meta">개인정보처리방침 (Privacy Policy) · 시행일자: 2026년 11월 1일</div>
+    </div>
+
+    <div class="lang-switcher">
+      <button id="btn-ko" class="lang-btn active" onclick="switchLang('ko')">한국어 (Korean)</button>
+      <button id="btn-en" class="lang-btn" onclick="switchLang('en')">English</button>
+    </div>
+
+    <!-- 한국어 내용 -->
+    <div id="content-ko" class="lang-content">
+      <div class="highlight-box">
+        <strong>🔒 핵심 요약:</strong> YumYum Calendar(이하 '앱')는 회원가입이나 로그인이 필요 없으며, 아기 프로필, 식단 기록, 큐브 재고, 사진 등 <strong>모든 육아 데이터는 개발자의 외부 서버로 전송되지 않고 사용자의 기기 내부(Local SQLite Database)에만 저장</strong>됩니다.
+      </div>
+
+      <h2>1. 개인정보의 처리 목적 및 수집 항목</h2>
+      <p>앱은 별도의 사용자 계정이나 회원가입 절차 없이 동작하며, 다음과 같은 데이터는 사용자의 원활한 이유식 기록 관리를 위해 오직 사용자의 휴대 기기 내부에만 저장됩니다:</p>
+      <ul>
+        <li><strong>아기 정보:</strong> 아기 이름(별명), 생년월일, 이유식 단계, 알레르기 반응 기록, 프로필 사진</li>
+        <li><strong>식단 및 재고:</strong> 일자별 이유식 식단 기록, 큐브 재고 및 소비 내역, 식재료 알레르기 메모</li>
+      </ul>
+
+      <h2>2. 제3자 제공 및 외부 SDK 사용</h2>
+      <p>앱은 서비스 제공, 광고 송출 및 인앱 결제 처리를 위해 신뢰할 수 있는 다음 제3자 서비스 SDK를 탑재하고 있습니다:</p>
+      <ul>
+        <li><strong>Google AdMob (Google LLC):</strong> 앱 내 맞춤형 및 일반 광고 송출을 위해 기기 식별자(광고 ID / IDFA), IP 주소, 대략적인 위치 정보 및 광고 참여 데이터를 처리할 수 있습니다. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+        <li><strong>RevenueCat (RevenueCat, Inc.):</strong> 인앱 결제(프리미엄 구매) 처리, 영수증 유효성 검증 및 기기 변경 시 구매 복원을 위해 익명의 앱 사용자 ID와 결제 상태 정보를 처리합니다. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat 개인정보처리방침</a></li>
+      </ul>
+
+      <h2>3. 기기 접근 권한 안내</h2>
+      <ul>
+        <li><strong>사진 라이브러리 (Photos):</strong> 아기 프로필 사진 등록 및 편집을 위해 사용자가 사진을 직접 선택할 때만 접근합니다. 선택된 사진은 기기 내부 저장소에만 보관됩니다.</li>
+        <li><strong>앱 추적 투명성 (ATT / iOS 전용):</strong> 사용자의 선택에 따라 맞춤형 광고 제공을 위한 식별자 접근 권한을 요청합니다. 거부하더라도 모든 앱 기능을 정상 이용할 수 있습니다.</li>
+      </ul>
+
+      <h2>4. 개인정보의 보유 및 파기</h2>
+      <p>모든 데이터는 사용자의 기기에만 저장되므로, 앱 내 <strong>[설정] → [데이터 전체 초기화]</strong> 기능을 실행하거나 <strong>앱을 기기에서 삭제(Uninstall)</strong>하면 즉시 모든 데이터가 기기에서 영구히 삭제됩니다.</p>
+
+      <h2>5. 아동 개인정보 보호</h2>
+      <p>본 앱은 부모 또는 법정대리인이 아기의 식단을 기록하고 관리할 수 있도록 돕는 도구입니다. 앱은 만 14세 미만 아동으로부터 직접 개인정보를 온라인으로 수집하지 않습니다.</p>
+
+      <h2>6. 개인정보 보호책임자 및 문의처</h2>
+      <p>앱 이용 중 개인정보 관련 문의사항이나 의견이 있으신 경우 아래 연락처로 문의해 주시기 바랍니다.</p>
+      <ul>
+        <li><strong>이메일:</strong> <a href="mailto:dadongppyu@gmail.com">dadongppyu@gmail.com</a></li>
+      </ul>
+    </div>
+
+    <!-- English Content -->
+    <div id="content-en" class="lang-content" style="display: none;">
+      <div class="highlight-box">
+        <strong>🔒 Summary:</strong> YumYum Calendar ("the App") does not require user accounts or registration. <strong>All parenting data, including baby profiles, meal records, inventory, and photos, are stored exclusively on your local device (Local SQLite Database) and are NEVER transmitted to our servers.</strong>
+      </div>
+
+      <h2>1. Data Collection & Purpose</h2>
+      <p>The App operates entirely locally without user registration. The following data is processed and stored solely on your device:</p>
+      <ul>
+        <li><strong>Baby Profile:</strong> Baby name/nickname, birth date, weaning stage, allergy logs, profile photo</li>
+        <li><strong>Meal & Inventory Records:</strong> Daily feeding records, cube batch inventory, allergy test notes</li>
+      </ul>
+
+      <h2>2. Third-Party Services & SDKs</h2>
+      <p>The App integrates the following third-party SDKs to support advertising and in-app purchase functionality:</p>
+      <ul>
+        <li><strong>Google AdMob (Google LLC):</strong> Used to serve advertisements. May process advertising identifiers (IDFA/GAID), IP address, and ad interaction analytics. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li><strong>RevenueCat (RevenueCat, Inc.):</strong> Used to validate in-app purchases and restore purchases across devices using an anonymous App User ID and store receipt status. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a></li>
+      </ul>
+
+      <h2>3. Device Permissions</h2>
+      <ul>
+        <li><strong>Photo Library:</strong> Requested only when you choose to set or change your baby's avatar image. Selected photos remain on your local device.</li>
+        <li><strong>App Tracking Transparency (iOS):</strong> Requested optionally for personalized advertising. You may decline without restricting any core app functionality.</li>
+      </ul>
+
+      <h2>4. Data Retention & Deletion</h2>
+      <p>Because all data resides strictly on your local device, deleting the application or using the in-app <strong>[Reset All Data]</strong> feature permanently erases all stored data immediately.</p>
+
+      <h2>5. Children's Privacy</h2>
+      <p>This App is intended for use by parents and guardians to manage infant weaning records. We do not knowingly collect personal identifiable information directly from children under 13.</p>
+
+      <h2>6. Contact Us</h2>
+      <p>For any questions or privacy inquiries regarding this policy, please contact:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:dadongppyu@gmail.com">dadongppyu@gmail.com</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-links">
+      <a href="terms.html">이용약관 (Terms of Service) ›</a>
+      <a href="index.html">홈 (Home)</a>
+    </div>
+  </div>
+</body>
+</html>

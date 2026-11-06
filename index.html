@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YumYum Calendar - 이용안내 및 법적 고지</title>
+  <style>
+    :root {
+      --primary: #FF9F43;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text: #1E293B;
+      --text-secondary: #64748B;
+      --border: #E2E8F0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 16px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      max-width: 540px;
+      width: 100%;
+      background: var(--card-bg);
+      padding: 40px 32px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+    .logo {
+      font-size: 54px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 26px;
+      color: #0F172A;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+    .menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.2s ease;
+    }
+    .menu-item:hover {
+      border-color: var(--primary);
+      background: #FFF9F2;
+      transform: translateY(-1px);
+    }
+    .menu-item span.icon {
+      font-size: 20px;
+      margin-right: 12px;
+    }
+    .menu-item span.arrow {
+      color: var(--primary);
+      font-size: 18px;
+    }
+    .footer {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+    }
+    .footer a {
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">🍼</div>
+    <h1>YumYum Calendar</h1>
+    <div class="subtitle">아기 이유식 캘린더 &amp; 큐브 재고 관리 앱</div>
+
+    <div class="menu">
+      <a href="privacy.html" class="menu-item">
+        <div style="display: flex; align-items: center;">
+          <span class="icon">🔒</span>
+          <span>개인정보처리방침 (Privacy Policy)</span>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+      <a href="terms.html" class="menu-item">
+        <div style="display: flex; align-items: center;">
+          <span class="icon">📜</span>
+          <span>서비스 이용약관 (Terms of Service)</span>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+    </div>
+
+    <div class="footer">
+      <p>문의: <a href="mailto:dadongppyu@gmail.com">dadongppyu@gmail.com</a></p>
+      <p style="margin-top: 4px;">&copy; 2026 YumYum Calendar. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
